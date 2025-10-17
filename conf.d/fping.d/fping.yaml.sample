@@ -1,5 +1,4 @@
 init_config:
-    basename: ping
     ping_timeout: 2.0
     check_interval: 10
 #    tags:
