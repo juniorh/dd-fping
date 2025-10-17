@@ -7,7 +7,7 @@ from datadog_checks.base import AgentCheck
 class FpingCheck(AgentCheck):
     def __init__(self, name, init_config, instances):
         super(FpingCheck, self).__init__(name, init_config, instances)
-        self._basename = self.init_config.get('basename', 'ping')
+        self._basename = "fping"
         self._ping_timeout = float(self.init_config.get('ping_timeout', 2.0))
         self._check_interval = int(self.init_config.get('check_interval', 10))
         self._global_tags = self.init_config.get('tags', {})
