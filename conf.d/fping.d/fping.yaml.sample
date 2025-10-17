@@ -1,0 +1,11 @@
+init_config:
+    basename: ping
+    ping_timeout: 2.0
+    check_interval: 10
+#    tags:
+#      free_tag1: you can use your custom tags for all
+
+instances:
+    - addr: 8.8.8.8
+#      tags:
+#        free_tag2: you can use your custom tags for instance
